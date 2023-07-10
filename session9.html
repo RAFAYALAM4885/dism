@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>BANK DETAIL</h1>
+    <script>
+        class BankAccount{
+            constructor(accountNumber,balance) {
+                this.accountNumber = accountNumber;
+                this.balance = balance;
+                document.write(`A/c No.: ${accountNumber}`+"<br>");
+                document.write(`Opening Balance: $${balance}`+"<br>");
+            }
+            deposite(amount){
+                this. balance += amount;
+                document.write(`Deposited: $${amount}`+"<br>");
+            }
+            withdraw(amount){
+                if(amount <= this.balance){
+                    this.balance -= amount;
+                    document.write(`Withdraw: $${amount}`+"<br>");
+                }
+                else{
+                    document.write(`Want to withdraw: $${amount}`+"<br>");
+                    document.write('Insufficient balance');
+                }
+
+            }
+            displayBalance() {
+                document.write(`Account Balance: $${this.balance}`+"<br>");
+            }
+        }
+        // Create an instance of the BankAccount class
+        const account = new BankAccount('SB-123',1500);
+        // Deposite money into the account
+        account.deposite(500);
+        // withdraw money from tne account
+        account.withdraw(400);
+        // display the account balance
+        account.displayBalance();
+        // withdraw money form the account
+        account.withdraw(1800);
+        // Display the account balance
+        account.displayBalance() 
+    </script>
+</body>
+</html>

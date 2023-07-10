@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class employee{
+            constructor(name,salary,age){
+                this.ename=name;
+                this.esalary=salary;
+                this.eage=age
+                document.write(`This is Employee Data`);    
+            }
+            
+                infoemployee()
+            {
+                document.write(`<h1>Employee data</h1>
+                NAME : ${this.ename}<br>
+                SALARY : ${this.esalary}<br>
+                AGE : ${this.eage}<br>`);
+            }    
+            
+        } 
+
+        
+        let b =new employee("rafay",30000,20)
+        b.infoemployee();
+
+    </script>
+</body>
+</html>

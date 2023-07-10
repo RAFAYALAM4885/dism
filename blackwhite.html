@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <div class="nav-center">
+                <span>overreacted</span>
+                <button class="btn">toggle</button>
+            </div>
+        </nav>
+        <section class="articles"> 
+            <!-- single post  -->
+
+            <!-- end single post -->
+         </section>
+    </main>
+    <!-- moment -->
+<script src="data.js">
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script>
+        const toggleBtn = document.querySelector('.btn');
+        const articlesContainer = document.querySelector('.articles');
+
+        toggleBtn.addEventListener('click' ,() => {
+            document.documentElement.classList.toggle('dark-theme');
+
+        });
+        const articlesData = articles
+        .map((articles)=>{
+            const{title, date, length, snippet } = articles;
+       
+            return `<articles class="post">
+                <h2>${title}</h2>
+                <div class="post-info">
+                <span>${formtDate}</span>
+                <span>${length}</span>
+                </div>
+                <p>
+                    ${snippet}
+                    </p>
+                    </article>`;
+        })
+        .join('');
+        articlesContainer.innerHTML = articlesData;
+    </script>
+</body>
+</html>

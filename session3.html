@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal With Pictures And Text, Buttons Etc</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="Modal.css">
+
+</head>
+<body>
+   
+
+<div id="full">
+
+                             <!-- Car 1 Card -->
+  <div class="card-deck">
+    <div class="card" id="head">
+      <img class="card-img-top" src="1.jpg" alt="Card image cap" style="height: 300px;" width="70px">
+      <div class="card-body">
+        <h5 class="card-title">Mercedes-Benz</h5>
+        <p class="card-text">Mercedes-Benz vehicles are known for their luxury, performance, and build quality.It is one of the world's leading car manufacturers.</p>
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal1">
+            Read More
+          </button>
+      </div>
+    </div>
+
+                                 <!-- Car 2 Card -->
+    <div class="card" id="head">
+      <img class="card-img-top" src="2.jpg" alt="Card image cap" style="height: 300px;" width="70px">
+      <div class="card-body">
+        <h5 class="card-title">Honda</h5>
+        <p class="card-text">Honda is a Japanese automaker that primarily competes with Toyota, Ford, Hyundai, and Nissan. Honda sells a wide range of vehicles</p>
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal2">
+            Read More
+          </button>
+      </div>
+    </div>
+
+                                           <!-- Car 3 Card -->
+    <div class="card" id="head">
+      <img class="card-img-top" src="3.jpg" alt="Card image cap" style="height: 300px;" width="70px">
+      <div class="card-body">
+        <h5 class="card-title">Camry</h5>
+        <p class="card-text">The Camry is known for being a safe, affordable, fuel-efficient and reliable car. Not all buyers want to buy a new model, though</p>
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal3">
+            Read More
+          </button>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+                             <!-- Modal car 1-->
+  <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModal1Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <center><h5 class="modal-title" id="exampleModal1Label">Mercedes-Benz</h5></center>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img class="card-img-top" src="1.jpg" alt="Card image cap">
+            <center><h5 class="modal-title">Price: $43,580</h5></center>
+            <h5 class="modal-title">Basics</h5>
+            <ul>
+            <li>Exterior color: Platinum White Pearl</li> 
+            <li>Interior color: Black</li> 
+            <li>Drivetrain:     Front-wheel Drive</li> 
+            <li> MPG:             – </li>
+            <li>Fuel type:      Gasoline</li>
+            <li>TransmissionAutomatic: Engine</li>
+            
+  
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+                          <!-- Modal car 2-->
+
+  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModal2Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModal2Label">Honda</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        
+        <div class="modal-body">
+            <img class="card-img-top" src="2.jpg" alt="Card image cap">
+            <center><h5 class="modal-title">Price: $43,580</h5></center>
+            <h5 class="modal-title">Basics</h5>
+            <ul>
+            <li>Exterior color: Platinum White Pearl</li> 
+            <li>Interior color: Black</li> 
+            <li>Drivetrain:     Front-wheel Drive</li> 
+            <li> MPG:             – </li>
+            <li>Fuel type:      Gasoline</li>
+            <li>TransmissionAutomatic: Engine</li>
+            
+  
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+                            <!-- Modal car 3 -->
+
+  <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModal3Label">Camry</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img class="card-img-top" src="3.jpg" alt="Card image cap" style="width: 90px;">
+            <center><h5 class="modal-title">Price: $43,580</h5></center>
+            <h5 class="modal-title">Basics</h5>
+            <ul>
+            <li>Exterior color: Platinum White Pearl</li> 
+            <li>Interior color: Black</li> 
+            <li>Drivetrain:     Front-wheel Drive</li> 
+            <li> MPG:             – </li>
+            <li>Fuel type:      Gasoline</li>
+            <li>TransmissionAutomatic: Engine</li>
+            
+  
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

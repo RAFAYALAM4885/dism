@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function DisplayCount(num) {
+            document.write(' Printing Prime Number Until 600' , primenum);
+             }
+             function CountPrime(callbackfunc) {
+                var count_prime = 0;
+                for (var i = 3; i < 600; i++){
+                    isprime = true;
+                    for (var j =2; j < i; j++) {
+                        if (i % j === 0){
+                            isprime = false;
+                            break;
+                        }
+                    }
+                    if (isprime) {
+                        document.write(i+"<br>");
+                        count_prime += 1;
+                    }
+                }
+                callbackfunc(count_prime);
+             }
+             document.write('Program started')
+             CountPrime (DisplayCount);
+            document.write('DONE');
+
+    </script>
+</body>
+</html>
